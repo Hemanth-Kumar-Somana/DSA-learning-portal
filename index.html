@@ -25,27 +25,35 @@
 
  -->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Learning Portal</title>
 
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DSA Learning Portal</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/dsa-favicon.svg?v=2" />
+    <link rel="alternate icon" type="image/png" href="/dsa-favicon.png?v=2" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
 
-  <!-- Your meta -->
-  <meta name="description" content="" />
-  <meta name="author" content="Hemanth Kumar" />
+    <!-- Meta -->
+    <meta name="description" content="" />
+    <meta name="author" content="Hemanth Kumar" />
 
-  <!-- Favicon (overrides Lovable's) -->
-  <link rel="icon" type="image/svg+xml" href="/dsa-favicon.svg?v=2" />
-  <link rel="alternate icon" type="image/png" href="/dsa-favicon.png?v=2" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="DSA Learning Portal" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
 
-  <!-- Open Graph / Twitter (remove Lovable handle) -->
-  <meta property="og:title" content="DSA Learning Portal" />
-  <meta property="og:description" content="" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- removed: <meta name="twitter:site" content="@lovable_dev" /> -->
-</head>
+  <body>
+    <div id="root"></div>
+    <!-- Keep this exactly the same, otherwise React app won’t mount -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
